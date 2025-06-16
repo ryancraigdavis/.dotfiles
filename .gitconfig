@@ -1,0 +1,27 @@
+[push]
+  autoSetupRemote = true
+[pull]
+	rebase = true
+[core]
+	editor = nvim
+  pager = delta
+	excludesfile = $HOME/.gitignore_global
+	ignorecase = false
+[interactive]
+  diffFilter = delta --color-only
+[delta]
+  navigate = true
+  line-numbers = true
+  side-by-side = true
+[diff]
+  colorMoved = default
+[rerere]
+	enabled = true
+[difftool "nvimdiff"]
+cmd = "nvim -d \"$LOCAL\" \"$REMOTE\""
+[merge]
+	tool = bc
+[mergetool]
+  prompt = false
+[mergetool "bc"]
+	trustExitCode = true
