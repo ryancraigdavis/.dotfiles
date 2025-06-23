@@ -18,6 +18,7 @@ fi
 PATH="/Library/Frameworks/Python.framework/Versions/3.11/bin:${PATH}"
 export PATH
 export GEM_HOME=$HOME/.gem
+export PATH="$PATH:/usr/local/go/bin"
 export PATH=$GEM_HOME/bin:$PATH
 export PATH="${HOME}/.local/bin:$PATH"
 export PATH="$PATH:${HOME}/flutter/bin"
@@ -31,6 +32,7 @@ export COMMON_CI_LOCAL="$HOME/ilab/Deloitte-US-Innovation-Technology/devops-comm
 export POETRY_HTTP_BASIC_PRIVATE_USERNAME=$(cat $HOME/.ssh/secrets/username.log)
 export POETRY_HTTP_BASIC_PRIVATE_PASSWORD=$(cat $HOME/.ssh/secrets/password.log)
 export DOCKER_DEFAULT_PLATFORM=linux/amd64
+# export GITHUB_AUTH_TOKEN=$(cat $HOME/.ssh/secrets/open_ssf.log) 
 
 # Starship Prompt
 eval "$(starship init zsh)"

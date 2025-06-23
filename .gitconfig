@@ -1,3 +1,6 @@
+[user]
+  name = Ryan Davis
+  email = ryan@ryan.com
 [push]
   autoSetupRemote = true
 [pull]
