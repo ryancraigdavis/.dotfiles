@@ -7,7 +7,7 @@ return {
     config = function()
       local ts = require("nvim-treesitter.configs")
       ts.setup({ 
-        ensure_installed = {"python", "rust"}, 
+        ensure_installed = {"python", "rust", "markdown", "markdown_inline"}, 
         highlight = { enable = true } 
       })
     end,

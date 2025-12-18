@@ -1,0 +1,5 @@
+os:
+  edit: '/home/ryan/.local/bin/nvr --servername $NVIM --remote-wait-silent {{filename}}'
+  editAtLine: '/home/ryan/.local/bin/nvr --servername $NVIM --remote-wait-silent +{{line}} {{filename}}'
+  editAtLineAndWait: '/home/ryan/.local/bin/nvr --servername $NVIM --remote-wait-silent +{{line}} {{filename}}'
+  editInTerminal: false

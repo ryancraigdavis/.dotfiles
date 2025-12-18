@@ -13,16 +13,5 @@ augroup END
   false
 )
 
--- Runs Formatter on save
-vim.api.nvim_exec(
-  [[
-augroup FormatAutogroup
-  autocmd!
-  autocmd BufWritePost *.js,*.ts,*.css,*.scss,*.md,*.html,*.rs,*.py,*.sh: FormatWrite
-augroup END
-]],
-  true
-)
-
 -- Highlight on yank
 vim.cmd("au TextYankPost * lua vim.highlight.on_yank {on_visual = true}") -- disabled in visual mode
