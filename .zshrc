@@ -39,6 +39,14 @@ eval "$(starship init zsh)"
 
 alias luamake=/Users/ryandavis/.config/lua-language-server/3rd/luamake/luamake
 
-nvm use 20
+nvm use 22
 setup_python
 [ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
+
+# pnpm
+export PNPM_HOME="/Users/ryandavis/Library/pnpm"
+case ":$PATH:" in
+  *":$PNPM_HOME:"*) ;;
+  *) export PATH="$PNPM_HOME:$PATH" ;;
+esac
+# pnpm end

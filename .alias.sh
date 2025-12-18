@@ -82,3 +82,7 @@ alias reset_tmux="tmux list-windows -a | while IFS=: read -r a b c; do tmux set-
 alias save_and_exit="history >> ~/work/all_history.txt; exit"
 alias nvimdiff="nvim -d"
 alias setup_concourse_debug="source $HOME/ilab/devtest/setup_concourse_debug/setup_alias.sh"
+alias devb="devcontainer build --workspace-folder \$(pwd)"
+alias devu="devcontainer up --workspace-folder \$(pwd)"
+alias deve="devu; devcontainer exec --workspace-folder \$(pwd)"
+alias devz="deve zsh"

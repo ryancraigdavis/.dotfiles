@@ -1,6 +1,6 @@
 [user]
-  name = Ryan Davis
-  email = ryan@ryan.com
+	name = ryandavis@deloitte.com
+	email = ryandavis@deloitte.com
 [push]
   autoSetupRemote = true
 [pull]
@@ -28,3 +28,5 @@ cmd = "nvim -d \"$LOCAL\" \"$REMOTE\""
   prompt = false
 [mergetool "bc"]
 	trustExitCode = true
+[credential]
+	helper = store
